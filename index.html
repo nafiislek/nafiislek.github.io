@@ -2,10 +2,81 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nafiş</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 300px;
+      width: 90%;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .phone {
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #e74c3c;
+      padding: 10px 20px;
+      border-radius: 25px;
+      animation: blink 1s infinite;
+      display: inline-block;
+    }
+
+    @keyframes blink {
+      0%   { opacity: 1; background-color: #e74c3c; }
+      50%  { opacity: 0.5; background-color: #f1c40f; }
+      100% { opacity: 1; background-color: #2ecc71; }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 15px;
+      }
+
+      .card p {
+        font-size: 14px;
+      }
+
+      .phone {
+        font-size: 16px;
+        padding: 8px 16px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Merhaba Canlar 🎉</h1>
+  <div class="card">
+    <img src="image.jpg" alt="Nafiş">
+    <p>Merhaba, ben Nafiş. Bir telefon uzağındayım!</p>
+    <div class="phone">+90 555 468 16 00</div>
+  </div>
 </body>
 </html>
